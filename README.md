@@ -4,7 +4,7 @@
 * [Setup](#setup)
 
 ## General info
-This project is scraping telegram links from r/CryptoMoonShots hot posts.
+This project is scraping telegram links from r/CryptoMoonShots posts.
 	
 ## Technologies
 Project is created with:

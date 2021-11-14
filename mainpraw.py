@@ -1,5 +1,6 @@
 import praw
 from praw.reddit import Subreddit
+import time
 
 reddit = praw.Reddit(
     client_id="my client id",
@@ -21,5 +22,6 @@ for post in subreddit.hot(limit=100): # what ever you want
       for j in range(i+3, min(i+30, len(post.selftext))):
         if post.selftext[j]==')' or post.selftext[j]==']' or post.selftext[j]==' ':
           print(post.selftext[i:j-1])
+          time.sleep(1)
           cnt = 1
           break
